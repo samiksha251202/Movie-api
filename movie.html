@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-mode">
+
+    <nav class="navbar">
+        <div class="logo">MovieApp</div>
+        <ul class="nav-links">
+            <li><a href="#" class="nav-item">Home</a></li>
+            <li><a href="#" class="nav-item">Movies</a></li>
+            <li><a href="#" class="nav-item">TV Shows</a></li>
+            <li><a href="#" class="nav-item">My List</a></li>
+        </ul>
+        <div class="search-container">
+            
+            <div class="search-box" >
+                <input type="text" id="searchInput" placeholder="Enter movie name..." onkeypress="handleKeyPress(event)">
+                <div class="search-icon" onclick="searchMovies()">🔍</div>
+            </div>
+        </div>
+        <button id="themeToggle"><img id="themeIcon" src="icons8-light-mode-50.png" alt="Light Mode" width="24"></button>
+    </nav>
+
+    <!-- Movie Results Grid -->
+    <div class="container">
+        <h1>Search for Movies</h1>
+        <div id="movieResults" class="movies-grid"></div>
+        <div id="movieDetails" class="movie-details"></div>
+
+      
+    </div>
+<!-- </div> -->    
+    <script src="movie.js"></script>
+</body>
+</html>
